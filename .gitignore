@@ -5,3 +5,4 @@ rdoc
 *.gem
 *.png
 .rvmrc
+lib/qrencoder/qrencoder_ext.so

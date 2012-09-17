@@ -9,9 +9,9 @@ RSpec::Core::RakeTask.new
 
 task :default => [:clean, :compile, :spec]
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 require 'sdoc'
-Rake::RDocTask.new do |rdoc|
+RDoc::Task.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.options << '--fmt' << 'shtml' # explictly set shtml generator
   rdoc.template = 'direct' # lighter template used on railsapi.com
